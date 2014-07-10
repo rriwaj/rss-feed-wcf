@@ -12,12 +12,12 @@ namespace RssFeeder.Service
         {
             var feed = new SyndicationFeed
             {
-                Title = new TextSyndicationContent("Test Feeds"),
+                Title = new TextSyndicationContent("A simple rss feeder."),
                 Language = "en-us",
                 LastUpdatedTime = DateTime.Now,
-                Copyright = new TextSyndicationContent("Copyright Test Feeder 2013"),
-                Description = new TextSyndicationContent("This is a Test Feed loaded from Feeder"),
-                ImageUrl = new Uri("../Contents/Images/rss.png", UriKind.Relative)
+                Copyright = new TextSyndicationContent("RRiwaj"),
+                Description = new TextSyndicationContent("This is a simple rss feeder created using WCF Syndication class."),
+                ImageUrl = new Uri("/Contents/Images/rss.png", UriKind.Relative)
             };
             var itemsRepo = _feedRepository.GetFeedItems(noOfFeeds); // Get Item Feeds from feed repository.
             var feedItems = new List<SyndicationItem>(); // Create new Syndication Item List which will be added to Syndication Feed
@@ -41,8 +41,5 @@ namespace RssFeeder.Service
             feed.Items = feedItems;
             return feed;
         }
-
-
-
     }
 }

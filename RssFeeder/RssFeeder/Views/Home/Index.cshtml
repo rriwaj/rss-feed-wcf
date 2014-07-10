@@ -11,6 +11,7 @@
     <style type="text/css">
         body {
             font-family: sans-serif;
+            background-color: #cccccc;
         }
 
         #wrapper {
@@ -67,6 +68,16 @@
                         <div>
                             @Html.ActionLink("RssFeed", "XmlFileFeed", "Feed", new { feedType = @FeedType.Rss, noOfFeeds = 10 }, null)<br />
                             @Html.ActionLink("AtomFeed", "XmlFileFeed", "Feed", new { feedType = @FeedType.Atom, noOfFeeds = 10 }, null)
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <fieldset>
+                        <legend>Load Rss Feed with styles.</legend>
+                        <div>
+                            @Html.ActionLink("RssFeedWithStyles", "XmlXsltFeed", "Feed", new { feedType = @FeedType.Rss, noOfFeeds = 10 }, null)<br />
                         </div>
                     </fieldset>
                 </div>

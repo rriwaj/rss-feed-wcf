@@ -14,12 +14,12 @@ namespace RssFeeder.Repository
             {
                 feedItems.Add(new FeedItem
                 {
-                    Title = "Test Feed " + i,
+                    Title = "This is feed no " + i,
                     FeedDate = DateTime.Now,
-                    Summary = "<b>This is summary of Test Feed " + i + "</b>",
+                    Summary = "A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. ",
                     FeedUrl = "http://www.google.com",
-                    AuthorName = "TestAuthor" + i,
-                    AuthorEmail = "testauthor" + i + "@test.com"
+                    AuthorName = "Rriwaj" + i,
+                    AuthorEmail = "riwajrimal@gmail.com"
                 });
             }
             return feedItems;

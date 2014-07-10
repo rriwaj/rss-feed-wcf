@@ -22,6 +22,11 @@ namespace RssFeeder.Controllers
         {
             return new RssActionResult(_feedService.GenerateFeeds(noOfFeeds), feedType);
         }
+        [HttpGet]
+        public ActionResult XmlXsltFeed(FeedType feedType, int noOfFeeds)
+        {
+            return new RssResultXslt(_feedService.GenerateFeeds(noOfFeeds), feedType);
+        }
     }
 }
 public enum FeedType

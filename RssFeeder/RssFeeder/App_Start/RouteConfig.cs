@@ -14,6 +14,11 @@ namespace RssFeeder.App_Start
                 defaults: new { controller = "Feed", action = "XmlStreamFeed", feedType = "rss", noOfFeeds = "10" }
             );
             routes.MapRoute(
+            name: "XmlXslt",
+            url: "XmlXsltFeed/{feedType}/{noOfFeeds}",
+            defaults: new { controller = "Feed", action = "XmlXsltFeed", feedType = "rss", noOfFeeds = "10" }
+            );
+            routes.MapRoute(
                 name: "XmlFile",
                 url: "XmlFileFeed/{feedType}/{noOfFeeds}",
                 defaults: new { controller = "Feed", action = "XmlFileFeed", feedType = "rss", noOfFeeds = "10" }

@@ -1,0 +1,67 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: #D4D0C8;
+}
+
+.rssWrapper {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #808080;
+}
+
+.rssHeader {
+    height: 100px;
+    font-size: 12px;
+}
+
+.rssFeedTitle {
+    font-size: 2em;
+    
+}
+
+.rssFeeds {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.rssFeedItem {
+    margin: 5px;
+    padding: 5px 0;
+}
+
+p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    border: 0;
+}
+
+.rssFeedItemHeading {
+    margin-bottom: 2px !important;
+}
+
+    .rssFeedItemHeading > a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #808080;
+    }
+
+        .rssFeedItemHeading > a:hover {
+            text-decoration: underline;
+            color: #000000;
+        }
+
+.rssDimText {
+    color: #999999;
+    font-style: italic;
+}
+
+.rssFeedItemSummary {
+    margin-top: 5px !important;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D4D0C8;
+}
