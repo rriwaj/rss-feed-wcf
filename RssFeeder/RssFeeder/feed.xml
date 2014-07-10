@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Test Feeds</title>
+  <subtitle type="text">This is a Test Feed loaded from Feeder</subtitle>
+  <id>uuid:46050cbe-25b0-48a6-aad5-11e7973457e0;id=16</id>
+  <rights type="text">Copyright Test Feeder 2013</rights>
+  <updated>2014-07-10T15:01:31+05:45</updated>
+  <logo>../Contents/Images/rss.png</logo>
+  <entry>
+    <id>uuid:46050cbe-25b0-48a6-aad5-11e7973457e0;id=17</id>
+    <title type="text">Test Feed 1</title>
+    <summary type="html">&lt;b&gt;This is summary of Test Feed 1&lt;/b&gt;</summary>
+    <published>2014-07-10T15:01:31+05:45</published>
+    <updated>2014-07-10T09:16:31Z</updated>
+    <author>
+      <name>TestAuthor1</name>
+      <email>testauthor1@test.com</email>
+    </author>
+    <link rel="alternate" href="http://www.google.com/" />
+  </entry>
+</feed>
