@@ -17,7 +17,7 @@ namespace RssFeeder.Service
                 LastUpdatedTime = DateTime.Now,
                 Copyright = new TextSyndicationContent("RRiwaj"),
                 Description = new TextSyndicationContent("This is a simple rss feeder created using WCF Syndication class."),
-                ImageUrl = new Uri("/Contents/Images/rss.png", UriKind.Relative)
+                ImageUrl = new Uri("/Contents/Images/rss.png", UriKind.Relative),
             };
             var itemsRepo = _feedRepository.GetFeedItems(noOfFeeds); // Get Item Feeds from feed repository.
             var feedItems = new List<SyndicationItem>(); // Create new Syndication Item List which will be added to Syndication Feed
@@ -29,13 +29,13 @@ namespace RssFeeder.Service
                     PublishDate = proxyItem.FeedDate,
                     Summary = SyndicationContent.CreateHtmlContent(proxyItem.Summary)
                 };
-                item.Links.Add(SyndicationLink.CreateAlternateLink(new Uri(proxyItem.FeedUrl)));
                 var authInfo = new SyndicationPerson
                 {
                     Name = proxyItem.AuthorName,
                     Email = proxyItem.AuthorEmail
                 };
                 item.Authors.Add(authInfo);
+                item.Links.Add(SyndicationLink.CreateAlternateLink(new Uri(proxyItem.FeedUrl)));
                 feedItems.Add(item);
             }
             feed.Items = feedItems;

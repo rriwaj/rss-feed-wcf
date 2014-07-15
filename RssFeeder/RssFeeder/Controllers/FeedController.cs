@@ -13,7 +13,7 @@ namespace RssFeeder.Controllers
         [HttpGet]
         public ActionResult XmlFileFeed(FeedType feedType, int noOfFeeds)
         {
-            return new RssResult(_feedService.GenerateFeeds(noOfFeeds), feedType);
+            return new RssResult(_feedService.GenerateFeeds(noOfFeeds), feedType, false);
         }
         //
         // GET: /RssFeeder/XmlStreamFeed
@@ -26,6 +26,10 @@ namespace RssFeeder.Controllers
         public ActionResult XmlXsltFeed(FeedType feedType, int noOfFeeds)
         {
             return new RssResultXslt(_feedService.GenerateFeeds(noOfFeeds), feedType);
+        }
+        public ActionResult XmlCssFeed(FeedType feedType, int noOfFeeds)
+        {
+            return new RssResult(_feedService.GenerateFeeds(noOfFeeds), feedType, true);
         }
     }
 }

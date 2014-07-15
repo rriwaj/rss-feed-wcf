@@ -41,9 +41,10 @@
             text-decoration: none;
             font-weight: bold;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
+            a:hover {
+                text-decoration: underline;
+            }
     </style>
 </head>
 <body>
@@ -75,9 +76,17 @@
             <div class="row">
                 <div class="cell">
                     <fieldset>
-                        <legend>Load Rss Feed with styles.</legend>
+                        <legend>Load Rss Feed with XSLT styles.</legend>
                         <div>
-                            @Html.ActionLink("RssFeedWithStyles", "XmlXsltFeed", "Feed", new { feedType = @FeedType.Rss, noOfFeeds = 10 }, null)<br />
+                            @Html.ActionLink("RssFeedWithXSLTStyles", "XmlXsltFeed", "Feed", new { feedType = @FeedType.Rss, noOfFeeds = 10 }, null)<br />
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="cell">
+                    <fieldset>
+                        <legend>Load Rss Feed with CSS styles.</legend>
+                        <div>
+                            @Html.ActionLink("RssFeedWithCSSStyles", "XmlCssFeed", "Feed", new { feedType = @FeedType.Rss, noOfFeeds = 10 }, null)<br />
                         </div>
                     </fieldset>
                 </div>

@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.ServiceModel.Syndication;
 using System.Text;
 using System.Web;
@@ -13,11 +12,13 @@ namespace RssFeeder.Helpers
         private readonly SyndicationFeed _feed;
         private readonly FeedType _feedType;
         private bool _isRssFeed;
-        public RssResult(SyndicationFeed feed, FeedType feedType)
+        private readonly bool _isCssStyles;
+        public RssResult(SyndicationFeed feed, FeedType feedType, bool isCssStyles)
             : base("application/rss+xml")
         {
             _feed = feed;
             _feedType = feedType;
+            _isCssStyles = isCssStyles;
         }
         protected override void WriteFile(HttpResponseBase response)
         {
@@ -33,10 +34,16 @@ namespace RssFeeder.Helpers
                     using (var xmlWriter = XmlWriter.Create(streamWriter, xs))
                     {
                         xmlWriter.WriteStartDocument();
+                        if (_isCssStyles)
+                        {
+                            const string strPi = "type='text/css' href='/Contents/Styles/feedStyle.css'";
+                            // Write processor information
+                            xmlWriter.WriteProcessingInstruction("xml-stylesheet", strPi);
+                        }
                         if (_isRssFeed)
                         {
                             // RSS 2.0
-                            var rssFormatter = new Rss20FeedFormatter(_feed);
+                            var rssFormatter = new Rss20FeedFormatter(_feed, true);
                             rssFormatter.WriteTo(xmlWriter);
                         }
                         else
@@ -53,7 +60,7 @@ namespace RssFeeder.Helpers
             response.Buffer = true;
             response.Charset = "";
             response.Cache.SetCacheability(HttpCacheability.NoCache);
-            response.ContentType = "application/xml";
+            response.ContentType = "text/xml";
             response.WriteFile(HttpContext.Current.Server.MapPath("~/feed.xml"));
             response.Flush();
             response.End();

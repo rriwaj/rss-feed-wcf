@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/css' href='/Contents/Styles/feedStyle.css'?>
 <rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>A simple rss feeder.</title>
     <description>This is a simple rss feeder created using WCF Syndication class.</description>
     <language>en-us</language>
     <copyright>RRiwaj</copyright>
-    <lastBuildDate>Thu, 10 Jul 2014 21:45:25 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jul 2014 10:06:47 +0545</lastBuildDate>
     <image>
       <url>/Contents/Images/rss.png</url>
       <title>A simple rss feeder.</title>
@@ -16,70 +17,70 @@
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 1</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 2</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 3</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 4</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 5</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 6</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 7</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 8</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 9</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
     <item>
       <link>http://www.google.com/</link>
       <author>riwajrimal@gmail.com</author>
       <title>This is feed no 10</title>
       <description>A simple rss feed which is randomly generated all of these values are hardcoded for test purpose. We can replace this static value by retrieving data from database. </description>
-      <pubDate>Thu, 10 Jul 2014 21:45:25 +0545</pubDate>
+      <pubDate>Tue, 15 Jul 2014 10:06:47 +0545</pubDate>
     </item>
   </channel>
 </rss>

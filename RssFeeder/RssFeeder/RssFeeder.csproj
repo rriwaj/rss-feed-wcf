@@ -130,6 +130,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Contents\Images\rss.png" />
     <Content Include="Contents\Styles\feed.css" />
+    <Content Include="Contents\Styles\feedStyle.css" />
     <Content Include="feed.xslt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
